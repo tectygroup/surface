@@ -20,7 +20,7 @@
 	
 		<p class=""><?php echo $SiteName ;?></p>
 		<a href="<?php $ConfLink.$UserName; ?>" >
-		<p class=""><?php echo $UserName;?></p>
+		<?php echo $UserName;?>
 		</a>
 		
 	</div>
