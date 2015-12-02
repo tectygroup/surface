@@ -1,1 +1,46 @@
-@CHARSET "UTF-8";
+@CHARSET "UTF-8"
+body{
+	margin:0px;
+	
+	
+	
+}
+
+.container {
+	//用于将元素内的框居中;
+	//这样让背景的颜色可以延伸到窗体的最边缘;
+	margin:0px auto;	
+	width:80%;
+	max-width:960px;
+	min-width:400px;
+}
+.category{
+	//用于header的分类的格样式;
+	
+	
+}
+
+
+.navigator{
+	//用于导航栏的创建的格式;
+	
+	
+	
+}
+.header{
+	
+	
+}
+
+.logo
+{
+	//用于定义logo的格式;				
+	
+	
+}
+
+
+
+
+
+
