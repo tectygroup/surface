@@ -5,42 +5,50 @@ body{
 	
 	
 }
+a{
+	/*用于清空所有的连接的下划线*/
+	text-decoration:none;	
+}
+
+.header,.header,.contianer,.logo,.category{
+	margin:0;
+	padding:0;
+}
 
 .container {
-	//用于将元素内的框居中;
-	//这样让背景的颜色可以延伸到窗体的最边缘;
+	/*用于将元素内的框居中;
+	这样让背景的颜色可以延伸到窗体的最边缘*/
 	margin:0px auto;	
 	width:80%;
 	max-width:960px;
 	min-width:400px;
-}
-.category{
-	//用于header的分类的格样式;
-	
-	
-}
-
-
-.navigator{
-	//用于导航栏的创建的格式;
-	
-	
 	
 }
 .header{
 	
 	
 }
+.category{
+	/*用于header的分类的格样式*/
+	list-style-type:none;
+	
+}
+.logo{
+	/*用于定义logo的格式*/
+	position:relative;
+	top:0.5em;
+	padding:0.5em;
+	
+}
+.category a{
+	float:left;	
+	padding:0.5em;
+	color:black;
+}
 
-.logo
-{
-	//用于定义logo的格式;				
+.navigator{
+	/*用于导航栏的创建的格式*/
+	
 	
 	
 }
-
-
-
-
-
-
