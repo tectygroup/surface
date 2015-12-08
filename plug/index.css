@@ -1,4 +1,5 @@
 @CHARSET "UTF-8"
+/*下面是定义通用的样式*/
 body{
 	margin:0px;
 	font: 14px/1.5 "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;	
@@ -30,6 +31,7 @@ a,li a{
 	max-width:960px;
 	min-width:400px;
 }
+/*下面是定义关于Header的样式*/
 .category a li{
 	/*用于定义最顶端的分类的字体样式*/
 	color:#333;	
@@ -78,4 +80,8 @@ a,li a{
 	display:inline;
 	color:#616161;
 	text-decoration-color:#616161;
+}
+/*下面是定义关于图片内容的样式*/
+img{
+    width:100%;
 }
