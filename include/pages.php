@@ -24,11 +24,11 @@ $ProductCategory="";
 		<div class="container">
 			<img class="logo" src="plug/logo.jpg" />
 		    <ul class="category">
-				<a href="####"><li class="text">分类1</li></a>
-				<a href="####"><li class="text">分类2</li></a>
-				<a href="####"><li class="text">分类3</li></a>
-				<a href="####"><li class="text">分类4</li></a>
-			</li>
+				<a href="####" class="text"><li>分类1</li></a>
+				<a href="####" class="text"><li>分类2</li></a>
+				<a href="####" class="text"><li>分类3</li></a>
+				<a href="####" class="text"><li>分类4</li></a>
+			</ul>
 		</div>
 		<div class="clear"></div>
 	</div>
