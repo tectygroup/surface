@@ -22,7 +22,7 @@ $ProductCategory="";
 	</head>
 	<div class="header ">
 		<div class="container">
-			<img class="logo" src="plug/logo.jpg" />
+			<a href="index.php"><img class="logo" src="plug/logo.jpg" /></a>
 		    <ul class="category">
 				<a href="####" class="text"><li>分类1</li></a>
 				<a href="####" class="text"><li>分类2</li></a>
