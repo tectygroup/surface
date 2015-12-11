@@ -32,12 +32,9 @@ $ProductCategory="";
 		</div>
 		<div class="clear"></div>
 	</div>
-	<div class="navigator">
-		<div class="container">
-			<?php
-			//这里用于更改房间的类型的名称；
-			Product("产品名称");
-			?>
-		</div>
-	
+		<?php
+		//控制导航栏的显示及其内容
+		//第一格填该页的风格，第二格为网站后台的参数，用于支持外站的访问。
+		Navigator($PageStyle,$SiteServer);
+		?>
 	</div>

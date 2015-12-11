@@ -1,13 +1,26 @@
 <?php
+	//引用配置文档
+	include 'include/conf.php';
 	//只有小分类的地方需要引用这样的类
 	include 'include/Functions.php';
+	//以下开始内容的显示
+	//初始化页面
 	
-	//都可以引用的部分
-	include 'include/conf.php';
+	
+	//设置页面中显示的文档的风格的变量
+	//0为主页，1为未来式，2为日式，3为美式，4为中式
+	$PageStyle="";
+	
+	
+	//引用页眉的代码
 	include 'include/header.php';
-	//下面的部分可以填写内容
-	
-	pic("img/example.jpg", "#978a74", "这里应该是内容", "20px", "20px","");
+	//下面的部分可以填写核心内容
+	//这里写的是用于调用pic函数的内容，将html类型的数据填写在此处
+	$Content="这里应该是内容";
+	//第一个空是写网站中的图片的路径，第二个空格是写由图片而要生成的背景颜色
+	//第三个空是可能需要定义的自定义样式，第四个空是文本框显示的位置
+	//（上T右R下B左L）
+	pic("img/example.jpg", "#978a74", $Content,"","R");
 ?>
 
 
@@ -16,5 +29,6 @@
 
 
 <?php
+	//引用页脚的代码
 	include 'include/footer.php';
 ?>
