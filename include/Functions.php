@@ -6,15 +6,16 @@ function Product($Name){
 
 
 	echo '
+	
 	<div class="left">
 		<h2>'.$Name.'</h2>
 	</div>
 	<div class="right">
-		<ul class="details">
-			<li class="text"><a href="####">详情1</a><span class="sepasrator">|</span></li>
+		<ul class="details" >
 			<li><a href="####">详情1</a><span class="sepasrator">|</span></li>
 			<li><a href="####">详情1</a><span class="sepasrator">|</span></li>
-			<li><a href="####">详情1</a></li>
+			<li><a href="####">详情1</a><span class="sepasrator">|</span></li>
+			<li><a href="####">详情1</a>	
 		</ul>
 		</div>
 	<div class="clear"></div>

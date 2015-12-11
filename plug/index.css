@@ -52,13 +52,14 @@ a,li a{
 	float:left;
 	padding-left:2em;
 	color:black;
+	font-size:18px;
+
 }
 .header{
 	margin:2em 0;	
 }
 .text{
 	text-align:center;
-	font-size:16px;
 }
 
 .navigator{
@@ -66,20 +67,23 @@ a,li a{
 	background-color:#f5f5f5;
 }
 
-.left h2{
+.navigator .left h2{
 	/*用于定义在于导航栏的字体显示*/
 	color:#424242;
 	font-weight:400;
 	font-size:18px;
-	line-height:30px
+	line-height:30px;
 }
-.details{
+.navigator .right .details{
 	list-style-type:none;
+    font-size:16px;
+    line-height:10px;
 }
-.details li{
+.navigator .right .details li{
 	float:left;
 	display:inline;
 	color:#616161;
+    line-height:30px;
 	text-decoration-color:#616161;
 }
 /*下面是定义关于图片内容的样式*/
@@ -113,8 +117,5 @@ a,li a{
 	
 }
 .content p{
-	
-	
-	                                                                   b        
-	
+
 }

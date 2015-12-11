@@ -7,7 +7,7 @@
 	include 'include/header.php';
 	//下面的部分可以填写内容
 	
-	pic("img/example.jpg", "#90816A", "这里应该是内容", "20px", "20px","");
+	pic("img/example.jpg", "#978a74", "这里应该是内容", "20px", "20px","");
 ?>
 
 

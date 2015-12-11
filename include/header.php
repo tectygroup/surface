@@ -35,6 +35,7 @@ $ProductCategory="";
 	<div class="navigator">
 		<div class="container">
 			<?php
+			//这里用于更改房间的类型的名称；
 			Product("产品名称");
 			?>
 		</div>
