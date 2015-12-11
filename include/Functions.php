@@ -79,15 +79,14 @@ function MailAddress($MailAddress,$Content){
 //PictureLink是指向于网站内图片的链接，BackgroundColor是输入#的十六进制颜色
 //Content是插入的文字内容的代码，Style是需要额外自定义的样式，Name是用于添加锚点参数的
 //Align是表示这个文本框相对于图片的位置是上下左右，然后调用CSS中相应的代码
-function pic($PictureLink,$BackgroundColor,$Content,$Style,$Name,$Align){
+function pic($PictureLink,$TextColor,$BackgroundColor,$Content,$Style,$Name,$Align){
 	//这个将图片排版好
 	echo '
 		<div name="'.$Name.'"style="background-color:'.$BackgroundColor.';'.$Style.'" class="img"><div class="container">
 			<div class="background"><img src="'.$PictureLink.'" />
-			<div class="content '.$Align.'" ;">
-				'.$Content.'
+			<div class="content '.$Align.' opacity" style="background-color:'.$BackgroundColor.'">
 			</div>
-			
+			<div class="content '.$Align.'"><div class="words" style="color:'.$TextColor.'">'.$Content.'</div></div>
 			</div>
 			<div class="clear"></div>
 		</div></div>';

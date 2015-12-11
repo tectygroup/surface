@@ -70,7 +70,7 @@ a,li a{
 	/*用于定义在于导航栏的字体显示*/
 	color:#424242;
 	font-weight:400;
-	font-size:18px;
+	font-size:20px;
 	line-height:30px;
 }
 .navigator .right .details{
@@ -100,25 +100,48 @@ a,li a{
     /*用于定义主要内容的对齐*/
 	position:absolute;
 	z-index:1;
+    text-align:center;
+    /*用于产生白色的文本阴影来增强现实效果*/
+    text-shadow:0.5px 0.5px 0.5px #FFF;
 }
+.opacity{
+	opacity:0.5;
+}
+
 /*下面定义是图片上有内容的内容显示需要引用的样式*/
 /*这里写的是关于文本框位置的信息所调用的默认定义*/
 .content.T{
+	left:0;
+    top:0;
+    width:100%;
+    height:30%;
 }
 .content.R{
+    right:0;
+    top:0;
+    width:30%;
+    height:100%;
 }
 .content.L{
+    left:0;
+    top:0;
+    width:30%;
+    height:100%;
 }
 .content.B{
+    bottom:0;
+    left:0;
+    width:100%;
+    height:30%;
 }
 /*这里写的是关于文字的定义*/
-.content h2{
+.words h2{
 	font-size:60px;
 }
 
-.content h3{
+.words h3{
 	font-size:40px;	
 }
-.content p{
-
+.words p{
+    font-size:16px;
 }

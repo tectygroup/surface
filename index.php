@@ -18,11 +18,13 @@
 	//这里写的是用于调用pic函数的内容
 	//下面应该写关于主题中初始化的名称内容。
 	$Name="内容";
-	$Contents="这里应该是内容";//这里可以写HTML的格式的内容
+	$Contents="<p>这里应该是内容</p>";//这里可以写HTML的格式的内容
+	$TextColor="#FFF";//#3b362d";//这里是写文本的颜色（图片平均色暗100）
+	$BackgroundColor="#978a74";//这里是写背景色（图片平均色亮50）
 	//第一个空是写网站中的图片的路径，第二个空格是写由图片而要生成的背景颜色
 	//第三个空是可能需要定义的自定义样式，第四个空是文本框显示的位置
 	//（上T右R下B左L）
-	pic("img/example.jpg", "#978a74", $Contents,$Name,"","R");
+	pic("img/example.jpg",$TextColor, $BackgroundColor, $Contents,$Name,"","T");
 ?>
 
 
