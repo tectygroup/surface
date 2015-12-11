@@ -2,13 +2,15 @@
 
 function Navigator($PageStyle,$SiteServer){
 	//定义每种类型所要链接显示名称的数组
-	$Fu=array("样式一","样式二","样式三");
-	$Jan="";
-	$US="";
-	$Cn="";
+	//后面需要定义的显示出来的名称
+	$Fu=array("样式一","样式二","样式三");$FuName="Future Style";
+	$Jan=array();$JanName="";
+	$US=array();$USName="";
+	$Cn=array();$CnName="";
 	
-	//定义一个之后会用到的空数组
-	$array=array();
+	//定义一个之后会用到的空数组,空变量Detail
+	//用于储存样导航栏的信息与样式信息，及样式的全称。
+	$array=array();$Details="";$StyleName="";
 	switch ($PageStyle){
 		case 0:
 			//判断为主页就隐藏导航栏
@@ -17,20 +19,34 @@ function Navigator($PageStyle,$SiteServer){
 		//每一种风格的样式配置赋值为后面循环语句用到的数组
 		case 1:
 			$array=$Fu;
+			$StyleName=$FuName;
 			break;		
 		case 2:
 			$array=$Jan;
+			$StyleName=$JanName;
 			break;		
 		case 3:
 			$array=$US;
+			$StyleName=$USName;
 			break;
 		case 4:
 			$array=$Cn;
+			$StyleName=$CnName;
 			break;
 	}
 	//通过循环语句来将值html化后写入Detail的变量中去
-	foreach ($array as $value) {
-		
+	$x="";
+	$arrlength=count($array);
+	for($x=0;$x<$arrlength;$x++) {
+		if($x<$arrlength-1){
+			$Details=$Details.'<a href="'.$SiteServer.'#'.$array[$x].'"><li>'.$array[$x].'<span class="sepasrator">|</span></li></a>';
+		}
+		else {
+			$Details=$Details.'<a href="'.$SiteServer.'#'.$array[$x].'"><li>'.$array[$x].'</li></a>';
+		}
+	}
+	foreach ($array as $array) {
+
 	}
 	
 	//将变量ProductCategory返回规定的格式的内容
@@ -44,11 +60,7 @@ function Navigator($PageStyle,$SiteServer){
 				<div class="right">
 					<ul class="details" >';
 						//这里显示上面用循环语句输出的内容。
-						echo $Details;
-						echo '<li><a href="'.$SiteServer.'####">详情1</a><span class="sepasrator">|</span></li>
-						<li><a href="'.$SiteServer.'####">详情1</a><span class="sepasrator">|</span></li>
-						<li><a href="'.$SiteServer.'####">详情1</a><span class="sepasrator">|</span></li>
-						<li><a href="'.$SiteServer.'####">详情1</a>	
+						echo $Details.'
 					</ul>
 				</div>
 			<div class="clear"></div>

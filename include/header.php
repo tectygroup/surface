@@ -12,7 +12,7 @@ $ProductCategory="";
 		//样式的引用输出
 		switch ($SiteStyle){
 			case 1:
-				echo '<link rel="stylesheet" type="text/css" href="plug/index.css" />';
+				echo '<link rel="stylesheet" type="text/css" href="plug/Assignment3.css" />';
 				break;
 			case 2:
 				echo '<link rel="stylesheet" type="text/css" href="plug/index.css" />';
