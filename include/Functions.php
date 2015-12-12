@@ -73,7 +73,7 @@ function Navigator($PageStyle,$SiteServer){
 }
 function MailAddress($MailAddress,$Content){
 	echo '<a href="mailto:'.$MailAddress.'">'.$Content.'</a>';	
-}
+} 
 
 
 //PictureLink是指向于网站内图片的链接，BackgroundColor是输入#的十六进制颜色

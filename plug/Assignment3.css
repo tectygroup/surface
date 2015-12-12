@@ -50,13 +50,14 @@ a,li a{
 .category a{
 	/*用于显示正确的宽度空白*/
 	float:left;
+	margin:2em 0;
 	padding-left:2em;
 	color:black;
 	font-size:18px;
 
 }
 .header{
-	margin:2em 0;	
+	//margin:2em 0;	
 }
 .text{
 	text-align:center;
