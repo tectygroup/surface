@@ -33,12 +33,17 @@ a,li a{
 	max-width:960px;
 	min-width:400px;
 }
+.NoBorder{
+	border:none;
+	
+}
 /*下面是定义关于Header的样式*/
 .category a li{
 	/*用于定义最顶端的分类的字体样式*/
 	color:#333;	
 }
 .logo{
+	margin-top:13px;
 	/*用于定义logo的格式*/
 	float:left;
 }
@@ -145,4 +150,35 @@ a,li a{
 }
 .words p{
     font-size:16px;
+}
+/*下面是定义footer的样式*/
+.footer{
+
+}
+.feature{
+
+
+}
+.feature .left{
+	margin:2em 0;
+	padding:0 2em;
+	
+	
+}
+.feature .left.border{
+	
+	
+}
+.feature h2{
+	font-size:0.8em;
+	color:#424242;
+	font-weight:400;
+    font-size:20px;
+    line-height:20px
+
+}
+.about{
+	
+	
+	
 }

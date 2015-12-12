@@ -14,6 +14,7 @@ function Navigator($PageStyle,$SiteServer){
 	switch ($PageStyle){
 		case 0:
 			//判断为主页就隐藏导航栏
+			
 			goto end;
 			break;
 		//每一种风格的样式配置赋值为后面循环语句用到的数组
