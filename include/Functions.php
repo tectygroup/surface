@@ -3,7 +3,7 @@
 function Navigator($PageStyle,$SiteServer){
 	//定义每种类型所要链接显示名称的数组
 	//后面需要定义的显示出来的名称
-	$Fu=array("样式一","样式二","样式三");$FuName="Future Style";
+	$Fu=array("hhhhhhh","样式二","样式三");$FuName="Future Style";
 	$Jan=array();$JanName="";
 	$US=array();$USName="";
 	$Cn=array();$CnName="";
@@ -69,7 +69,7 @@ function Navigator($PageStyle,$SiteServer){
 	
 	
 	//这里是如果是主页，隐藏导航栏的地方
-	end:
+	end:;
 }
 function MailAddress($MailAddress,$Content){
 	echo '<a href="mailto:'.$MailAddress.'">'.$Content.'</a>';	
