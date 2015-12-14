@@ -16,16 +16,20 @@
 				<h2>About US</h2>
 				<p>Designer</p>
 				<p>Supplier</p>
-				<p>Auditor</p>
+				
 				
 			</div>
 			<div class="left">
-				<h2>content</h2>
-			
-			
+				<h2>Spport</h2>
+				<p>Manual</p>
+				<p>Service Agreement</p>
 			</div>
 
-			<div class="right"></div>
+			<div class="right">
+				<h2>400-123-7777</h2>
+				<p>Free to Call</p>
+				<p>ANYTIME ANYWHERE<p>
+			</div>
 			<div class="clear"></div>
 		</div>
 	</div>

@@ -17,7 +17,7 @@
 	//下面的部分可以填写核心内容
 	//这里写的是用于调用pic函数的内容
 	//下面应该写关于主题中初始化的名称内容。
-	$Name="Living-room";
+	$Name="Living-Room";
 	$Contents="<h2>American</h2><p>￥1,000,000</p>";//这里可以写HTML的格式的内容
 	$TextColor="#000";//#3b362d";//这里是写文本的颜色（图片平均色暗100）
 	$BackgroundColor="#a39991";//这里是写背景色（图片平均色亮50）
@@ -35,7 +35,7 @@
 	//（上T右R下B左L）
 	pic("img/American 2.jpg",$TextColor, $BackgroundColor, $Contents,$Name,"","B");
 	
-	$Name="Dining-room";
+	$Name="Dining-Room";
 	$Contents="<p>30m²</p><p>Together kitchen and dining-room</p><p>Traditional American furniture</P>";//这里可以写HTML的格式的内容
 	$TextColor="#FFF";//#3b362d";//这里是写文本的颜色（图片平均色暗100）
 	$BackgroundColor="#c4b9ab";//这里是写背景色（图片平均色亮50）

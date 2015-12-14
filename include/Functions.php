@@ -5,7 +5,7 @@ function Navigator($PageStyle,$SiteServer){
 	//后面需要定义的显示出来的名称
 	$Fu=array("hhhhhhh","样式二","样式三");$FuName="Future Style";
 	$Jan=array();$JanName="";
-	$US=array("Living-Room","Dinig-Room","Toilet","Host-Room","Guest-Room");$USName="American Style";
+	$US=array("Living-Room","Dining-Room","Toilet","Host-Room","Guest-Room");$USName="American Style";
 	$Cn=array("Living-Room","Bedroom","Toilet","Dining-Room");$CnName="Chinese Style";
 	
 	//定义一个之后会用到的空数组,空变量Detail
