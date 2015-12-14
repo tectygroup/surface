@@ -5,8 +5,8 @@ function Navigator($PageStyle,$SiteServer){
 	//后面需要定义的显示出来的名称
 	$Fu=array("hhhhhhh","样式二","样式三");$FuName="Future Style";
 	$Jan=array();$JanName="";
-	$US=array();$USName="";
-	$Cn=array();$CnName="";
+	$US=array("Living-Room","Dinig-Room","Toilet","Host-Room","Guest-Room");$USName="American Style";
+	$Cn=array("Living-Room","Bedroom","Toilet","Dining-Room");$CnName="Chinese Style";
 	
 	//定义一个之后会用到的空数组,空变量Detail
 	//用于储存样导航栏的信息与样式信息，及样式的全称。
@@ -40,10 +40,10 @@ function Navigator($PageStyle,$SiteServer){
 	$arrlength=count($array);
 	for($x=0;$x<$arrlength;$x++) {
 		if($x<$arrlength-1){
-			$Details=$Details.'<a href="'.$SiteServer.'#'.$array[$x].'"><li>'.$array[$x].'<span class="sepasrator">|</span></li></a>';
+			$Details=$Details.'<a href="#'.$array[$x].'"><li class="border">'.$array[$x].'</li></a>';
 		}
 		else {
-			$Details=$Details.'<a href="'.$SiteServer.'#'.$array[$x].'"><li>'.$array[$x].'</li></a>';
+			$Details=$Details.'<a href="#'.$array[$x].'"><li>'.$array[$x].'</li></a>';
 		}
 	}
 	foreach ($array as $array) {
@@ -80,10 +80,11 @@ function MailAddress($MailAddress,$Content){
 //PictureLink是指向于网站内图片的链接，BackgroundColor是输入#的十六进制颜色
 //Content是插入的文字内容的代码，Style是需要额外自定义的样式，Name是用于添加锚点参数的
 //Align是表示这个文本框相对于图片的位置是上下左右，然后调用CSS中相应的代码
-function pic($PictureLink,$TextColor,$BackgroundColor,$Content,$Style,$Name,$Align){
+function pic($PictureLink,$TextColor,$BackgroundColor,$Content,$Name,$Style,$Align){
 	//这个将图片排版好
+
 	echo '
-		<div name="'.$Name.'"style="background-color:'.$BackgroundColor.';'.$Style.'" class="img"><div class="container">
+		<div id="'.$Name.'" style="background-color:'.$BackgroundColor.';'.$Style.'" class="img"><div class="container">
 			<div class="background"><img src="'.$PictureLink.'" />
 			<div class="content '.$Align.' opacity" style="background-color:'.$BackgroundColor.'">
 			</div>

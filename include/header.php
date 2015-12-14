@@ -24,10 +24,10 @@ $ProductCategory="";
 		<div class="container">
 			<a href="index.php"><img class="logo" src="plug/logo.jpg" /></a>
 		    <ul class="category">
-				<a href="####" class="text"><li>分类1</li></a>
-				<a href="####" class="text"><li>分类2</li></a>
-				<a href="####" class="text"><li>分类3</li></a>
-				<a href="####" class="text"><li>分类4</li></a>
+				<a href="<?php echo $SiteServer; ?>Future.php" class="text"><li>Future</li></a>
+				<a href="<?php echo $SiteServer; ?>Japanese.php" class="text"><li>Japanese</li></a>
+				<a href="<?php echo $SiteServer; ?>American.php" class="text"><li>American</li></a>
+				<a href="<?php echo $SiteServer; ?>Chinese.php" class="text"><li>Chinese</li></a>
 			</ul>
 		</div>
 		<div class="clear"></div>

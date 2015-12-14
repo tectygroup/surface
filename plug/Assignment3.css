@@ -25,6 +25,14 @@ a,li a{
 	/*用于清空浮动来填充空间*/
 	clear:both;
 }
+.clearR{
+	clear:right;
+}
+.MarginCenter{
+	margin:atuo
+	
+	
+}
 .container {
 	/*用于将元素内的框居中;
 	这样让背景的颜色可以延伸到窗体的最边缘*/
@@ -37,15 +45,27 @@ a,li a{
 	border:none;
 	
 }
-/*下面是定义关于Header的样式*/
+
+
+/*----下面是定义关于Header的样式----*/
+
+
+.header{
+	position:fixed;
+	top:0;
+	width:100%;
+    z-index:3;
+    background-color:#FFF;
+}
 .category a li{
 	/*用于定义最顶端的分类的字体样式*/
 	color:#333;	
 }
 .logo{
-	margin-top:13px;
+	margin-top:12px;
 	/*用于定义logo的格式*/
 	float:left;
+	height:3.5em;
 }
 .category{
 	/*用于header的分类的格样式*/
@@ -55,7 +75,7 @@ a,li a{
 .category a{
 	/*用于显示正确的宽度空白*/
 	float:left;
-	margin:2em 0;
+	margin:1.5em 0;
 	padding-left:2em;
 	color:black;
 	font-size:18px;
@@ -69,8 +89,9 @@ a,li a{
 }
 
 .navigator{
-	/*用于导航栏的创建的格式*/
-	background-color:#f5f5f5;
+    /*用于导航栏的创建的格式*/
+    background-color:#f5f5f5;
+    margin-top:5.45em;
 }
 .navigator .left h2{
 	/*用于定义在于导航栏的字体显示*/
@@ -88,7 +109,9 @@ a,li a{
 	float:left;
 	display:inline;
 	color:#616161;
-    line-height:30px;
+    line-height:auto;
+    margin:10px 0px ;
+    padding:0 10px;
 	text-decoration-color:#616161;
 }
 /*下面是定义关于图片内容的样式*/
@@ -102,6 +125,9 @@ a,li a{
 .background img{
 	width:100%;
 }
+.opacity{
+    opacity:0.5;
+}    
 .content{
     /*用于定义主要内容的对齐*/
 	position:absolute;
@@ -109,36 +135,37 @@ a,li a{
     text-align:center;
     /*用于产生白色的文本阴影来增强现实效果*/
     text-shadow:0.5px 0.5px 0.5px #FFF;
-}
-.opacity{
-	opacity:0.5;
-}
 
-/*下面定义是图片上有内容的内容显示需要引用的样式*/
-/*这里写的是关于文本框位置的信息所调用的默认定义*/
-.content.T{
-	left:0;
-    top:0;
+}
+.content.T,.content.B{
     width:100%;
     height:30%;
+    max-height:300px;
+	left:0;
+}
+.content.R,.content.L{
+    top:0;
+    width:30%;
+    height:100%;
+	
+}
+
+
+/*----下面定义是图片上有内容的内容显示需要引用的样式----*/
+
+
+/*这里写的是关于文本框位置的信息所调用的默认定义*/
+.content.T{
+    top:0;
 }
 .content.R{
     right:0;
-    top:0;
-    width:30%;
-    height:100%;
 }
 .content.L{
     left:0;
-    top:0;
-    width:30%;
-    height:100%;
 }
 .content.B{
     bottom:0;
-    left:0;
-    width:100%;
-    height:30%;
 }
 /*这里写的是关于文字的定义*/
 .words h2{
@@ -156,29 +183,32 @@ a,li a{
 
 }
 .feature{
-
-
+    margin:auto;
+   
 }
 .feature .left{
 	margin:2em 0;
-	padding:0 2em;
+	padding:0 3em;
 	
 	
 }
-.feature .left.border{
-	
+.border{
+	border-right:1px solid #c8c8c8;
 	
 }
-.feature h2{
+.feature h2 {
 	font-size:0.8em;
 	color:#424242;
 	font-weight:400;
-    font-size:20px;
-    line-height:20px
-
+    font-size:16px;
+    line-height:0px
 }
-.about{
-	
+.about h2{
+   font-size:0.8em;
+    color:#424242;
+    font-weight:400;
+    font-size:16px;
+    line-height:0px
 	
 	
 }
