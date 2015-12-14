@@ -14,8 +14,8 @@
 		<div class="about">
 			<div class="left">
 				<h2>About US</h2>
-				<a href="Designer.php"><p>Designer</p></a>
-				<p>Supplier</p>
+				<a href="<?php echo $SiteServer; ?>Designer.php"><p>Designer</p></a>
+				<a href="<?php echo $SiteServer; ?>Designer.php"><p>Supplier</p></a>
 				
 				
 			</div>

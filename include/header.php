@@ -24,10 +24,10 @@ $ProductCategory="";
 		<div class="container">
 			<a href="index.php"><img class="logo" src="plug/logo.jpg" /></a>
 		    <ul class="category">
-				<a href="<?php echo $SiteServer; ?>Future.php" class="text"><li>Future</li></a>
-				<a href="<?php echo $SiteServer; ?>Japanese.php" class="text"><li>Japanese</li></a>
-				<a href="<?php echo $SiteServer; ?>American.php" class="text"><li>American</li></a>
-				<a href="<?php echo $SiteServer; ?>Chinese.php" class="text"><li>Chinese</li></a>
+				<li><a href="<?php echo $SiteServer; ?>Future.php" class="text">Future</a></li>
+				<li><a href="<?php echo $SiteServer; ?>Japanese.php" class="text">Japanese</a></li>
+				<li><a href="<?php echo $SiteServer; ?>American.php" class="text">American</a></li>
+				<li><a href="<?php echo $SiteServer; ?>Chinese.php" class="text">Chinese</a></li>
 			</ul>
 		</div>
 		<div class="clear"></div>

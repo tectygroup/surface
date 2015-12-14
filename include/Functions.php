@@ -10,12 +10,12 @@ function Navigator($PageStyle,$SiteServer){
 	
 	//定义一个之后会用到的空数组,空变量Detail
 	//用于储存样导航栏的信息与样式信息，及样式的全称。
-	$array=array();$Details="";$StyleName="";
+	$array=array();$Details="";$StyleName="";$NavigatorShow="";
 	switch ($PageStyle){
 		case 0:
-			//判断为主页就隐藏导航栏
+			//判断为主页就隐藏导航栏,插入一个空的div占位。
 			
-			goto end;
+			$NavigatorShow="0";
 			break;
 		//每一种风格的样式配置赋值为后面循环语句用到的数组
 		case 1:
@@ -49,28 +49,34 @@ function Navigator($PageStyle,$SiteServer){
 	foreach ($array as $array) {
 
 	}
-	
-	//将变量ProductCategory返回规定的格式的内容
-	//其中包括左边的分类名称及右边的条形栏
-	echo '
-		<div class="navigator">
-			<div class="container">
-				<div class="left">
-					<h2>'.$StyleName.'</h2>
-				</div>
-				<div class="right">
-					<ul class="details" >';
-						//这里显示上面用循环语句输出的内容。
-						echo $Details.'
-					</ul>
-				</div>
-			<div class="clear"></div>
-		</div>';
-	//按照规定格式输出抬头上面的变量
-	
+	//通过判断NavigatorShow来控制是否显示Navigator的内容。
+	if($NavigatorShow=="0"){
+		echo'<div class="navigator"></div>';
+		
+		
+	}
+	else{
+		//将变量ProductCategory返回规定的格式的内容
+		//其中包括左边的分类名称及右边的条形栏
+		echo '
+			<div class="navigator">
+				<div class="container">
+					<div class="left">
+						<h2>'.$StyleName.'</h2>
+					</div>
+					<div class="right">
+						<ul class="details" >';
+							//这里显示上面用循环语句输出的内容。
+							echo $Details.'
+						</ul>
+					</div>
+				<div class="clear"></div>
+			</div>';
+		//按照规定格式输出抬头上面的变量
+	}
 	
 	//这里是如果是主页，隐藏导航栏的地方
-	end:;
+	end:
 }
 function MailAddress($MailAddress,$Content){
 	echo '<a href="mailto:'.$MailAddress.'">'.$Content.'</a>';	
@@ -93,4 +99,11 @@ function pic($PictureLink,$TextColor,$BackgroundColor,$Content,$Name,$Style,$Ali
 			<div class="clear"></div>
 		</div></div>';
 }
+//这个函数是用于插入一个全屏的div，带有指定的链接
+function DivLink($link,$content,$TextColor){
+	
+	return '<a href="'.$link.'"><div style="color:'.$TextColor.'" class="DivLink">'.$content.'</div></a>';
+}
+
 ?>
+
