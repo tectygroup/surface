@@ -20,7 +20,7 @@
 	//下面应该写关于主题中初始化的名称内容。
 	//这里写的是用于调用pic函数的内容
 	//下面应该写关于主题中初始化的名称内容。
-	$Name="American style";
+	$Name="American";
 	$Contents="<ul><li><h2>20m²<h2></li>
                       <li>Luxury decoration and furniture</li>
                       <li>Black marble floor & white walls</li>
@@ -34,7 +34,7 @@
 
         
 
-        $Name="Chinese style";
+        $Name="Chinese";
 	$Contents="<ul><li><h2>15m²<h2></li>
                       <li>Wooden decoration&Modern washing system</li>
                       <li>Toilet,Sink,Carpet,Showers</li>
@@ -45,7 +45,7 @@
 
 
 
-        $Name="Japan style";
+        $Name="Japanese";
 	$Contents="<ul><li><h2>25m²<h2></li>
                       <li>Simple and spacious</li>
                       <li>Toilet,Sink,Carpet,Showers</li>
@@ -56,7 +56,7 @@
         pic("img/bathroom3.jpg",$TextColor, $BackgroundColor, $Contents,$Name,"","L");
 
         
-        $Name="Future style";
+        $Name="Modern";
 	$Contents="<ul><li><h2>25m²<h2></li>
                       <li>Modern equipment</li>
                       <li>Perfect hot water system & white marble walls</li>

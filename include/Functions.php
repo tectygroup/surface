@@ -6,7 +6,7 @@ function Navigator($PageStyle,$SiteServer){
 	//0为主页，1为Rooms，2为Room，3为Contacts
 	//21,22,23,24分别为Living-Room,Bedroom,Bathroom,Kitchen
 	$Rooms=array("Living-Room","Bedroom","Bathroom","Kitchen");$RoomsName="Room Overview";//Rooms的总页面
-	$Room=array("American","Chinese","Japanese","Future");//Room页面,每个房间的名字在后面定义
+	$Room=array("American","Chinese","Japanese","Modern");//Room页面,每个房间的名字在后面定义
 	$Contacts=array("Designer","Supplier");$ContactsName="Contacts";
 	$Cn=array("Living-Room","Bedroom","Toilet","Dining-Room");$CnName="Chinese Style";
 	

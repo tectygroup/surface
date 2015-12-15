@@ -49,7 +49,7 @@
 	$BackgroundColor="#9d9481";
 	pic("img/Living-Room3.jpg",$TextColor, $BackgroundColor, $Contents,$Name,"","B");
 	
-	$Name="Future";
+	$Name="Modern";
 	$Contents="<ul><li>40m²</li>
 	           <li>Black Wooden floor</li>
 			   <li>LCD TV</li>

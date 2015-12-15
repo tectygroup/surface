@@ -36,7 +36,7 @@
 				   <li>Black</li>
 				   <li>2m bed</li>
 				   <li>Chinese traditional decoration</li></ul>";//这里可以写HTML的格式的内容
-	$TextColor="#000";//#3b362d";//这里是写文本的颜色（图片平均色暗100）
+	$TextColor="#fff";//#3b362d";//这里是写文本的颜色（图片平均色暗100）
 	$BackgroundColor="#635d51";//这里是写背景色（图片平均色亮50）
 	//第一个空是写网站中的图片的路径，第二个空格是写由图片而要生成的背景颜色
 	//第三个空是可能需要定义的自定义样式，第四个空是文本框显示的位置
@@ -51,14 +51,14 @@
 			       <li>Blanket</li>
 			       <li>White and brwon</li>
 			       <li>Simple furniture</li></ul>";//这里可以写HTML的格式的内容
-	$TextColor="#FFF";//#3b362d";//这里是写文本的颜色（图片平均色暗100）
+	$TextColor="#000";//#3b362d";//这里是写文本的颜色（图片平均色暗100）
 	$BackgroundColor="#e2dddb";//这里是写背景色（图片平均色亮50）
 	//第一个空是写网站中的图片的路径，第二个空格是写由图片而要生成的背景颜色
 	//第三个空是可能需要定义的自定义样式，第四个空是文本框显示的位置
 	//（上T右R下B左L）
 	pic("img/Bedroom3.jpg",$TextColor, $BackgroundColor, $Contents,$Name,"","B");
 	
-	$Name="Future";
+	$Name="Modern";
 	$Contents="<ul><li>50m²</li>
 	               <li>Wooden floor</li>
 				   <li>Black and white</li>

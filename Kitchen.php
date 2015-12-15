@@ -19,13 +19,13 @@
 	//这里写的是用于调用pic函数的内容
 	//下面应该写关于主题中初始化的名称内容。
         
-	$Name="Amercian";
+	$Name="American";
 	$Contents="<ul><li><h3>20m²<h3></li>
                       <li>generous decoration and fit for children</li>
                       <li>many drawer,easy to assortment</li>
                       <li>Dining table,Cupboard,Sink</li>
                       <li>light brown wood floor &#38; white walls</li></ul>";
-	$TextColor="#FFF";//#3b362d";
+	$TextColor="#000";//#3b362d";
 	$BackgroundColor="#c4b9ab";
 	
 	pic ("img/kitchen1.jpg",$TextColor, $BackgroundColor, $Contents,$Name,"","R");
@@ -60,7 +60,7 @@
 
 
     
-	$Name="Future";
+	$Name="Modern";
 	$Contents="<ul><li><h3>25m²<h3></li>
                       <li>clear and full of fantasy</li>
                       <li>these futures have metal colours and smooth tactility</li>
