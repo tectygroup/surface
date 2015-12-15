@@ -27,7 +27,11 @@
 	pic("img/CompanyBuilding.jpg",$TextColor, $BackgroundColor, $Contents,$Name,"","T");
 	
 ?>
+<div class="container">
 
+	<p>Mew Decoration Group Company is an experienced decoration company which provides varieties of excellent quality of house design and decoration service. Our professional designers provide you with unique perfect designs. We provide you with one-stop-service, from designing to decorating; our professional designers will provide you with perfect unique designs while our experienced engineers will make the design come true carefully. We promise you that every house will have different time of free service after decoration based on its original worth.
+	</p>
+</div>
 
 
 

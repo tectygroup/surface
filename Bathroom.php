@@ -21,7 +21,7 @@
 	//这里写的是用于调用pic函数的内容
 	//下面应该写关于主题中初始化的名称内容。
 	$Name="American style";
-	$Contents="<ul><li><h2>20m2<h2></li>
+	$Contents="<ul><li><h2>20m²<h2></li>
                       <li>Luxury decoration and furniture</li>
                       <li>Black marble floor & white walls</li>
                       <li>Toilet,Sink,Carpet,Showers</li></ul>";//这里可以写HTML的格式的内容
@@ -35,7 +35,7 @@
         
 
         $Name="Chinese style";
-	$Contents="<ul><li><h2>15m2<h2></li>
+	$Contents="<ul><li><h2>15m²<h2></li>
                       <li>Wooden decoration&Modern washing system</li>
                       <li>Toilet,Sink,Carpet,Showers</li>
                       <li>The ground is gray and wooden decoration wall </li></ul>";
@@ -46,7 +46,7 @@
 
 
         $Name="Japan style";
-	$Contents="<ul><li><h2>25m2<h2></li>
+	$Contents="<ul><li><h2>25m²<h2></li>
                       <li>Simple and spacious</li>
                       <li>Toilet,Sink,Carpet,Showers</li>
                       <li>The wall is white</li>
@@ -57,7 +57,7 @@
 
         
         $Name="Future style";
-	$Contents="<ul><li><h2>25m2<h2></li>
+	$Contents="<ul><li><h2>25m²<h2></li>
                       <li>Modern equipment</li>
                       <li>Perfect hot water system & white marble walls</li>
                       <li>Toilet,Sink,Carpet,Showers</li></ul>";

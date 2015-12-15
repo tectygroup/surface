@@ -24,12 +24,12 @@ $ProductCategory="";
 		<div class="container">
 			<a href="index.php"><img class="logo" src="<?php echo $SiteServer; ?>plug/logo.jpg" /></a>
 
-			<ul class="<?php echo $SiteServer; ?>category">
+			<ul class="category">
 				<li><a href="<?php echo $SiteServer; ?>Living-Room.php">Living-Room</a></li>
 				<li><a href="<?php echo $SiteServer; ?>Bedroom.php" >Bedroom</a></li>
 				<li><a href="<?php echo $SiteServer; ?>Bathroom.php" >Bathroom</a></li>
 				<li><a href="<?php echo $SiteServer; ?>Kitchen.php" >Kitchen</a></li>
-				<li><a href="<?php echo $SiteServer; ?>Rooms.php" class="right" style="">Rooms</a></li>
+				<li class="right" style="display:inline;"><a href="<?php echo $SiteServer; ?>Rooms.php" >Rooms</a></li>
 			</ul>
 
 		</div>

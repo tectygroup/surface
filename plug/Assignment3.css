@@ -1,4 +1,6 @@
 @CHARSET "UTF-8";
+
+
 /*--下面是定义通用的样式--*/
 body
 {
@@ -43,9 +45,9 @@ a,li a{
 	/*用于将元素内的框居中;
 	这样让背景的颜色可以延伸到窗体的最边缘*/
 	margin:0px auto;	
-	width:90%;
+	width:95%;
 	max-width:960px;
-	min-width:400px;
+	min-width:490px;
 }
 .NoBorder{
 	border:none;
@@ -249,4 +251,45 @@ a,li a{
 .container .table-2 td{
     text-align:center; 
 }
-/*下面定义的是只会用在Rooms里面的样式*/
+
+
+/*--下面是响应式排版的布局--*/
+
+@media screen and (max-width:533px){
+    /*让无关紧要的电话信息删除*/
+	.about .right{display:none;}
+	
+	
+}
+@media screen and (max-width:650px){
+    /*让导航栏左侧集合分类不见*/
+    .category li .right{
+    display:inline;
+    /*这个语句莫名其妙的失效了，该等效语句在header里面*/
+    }
+    .category li{
+    display:none;
+    }
+    /*下面是让特点的语句居中的显示*/
+    .feature .left{
+    float:none;
+    padding-right:0;
+    }
+    .feature .left h2{
+    text-align:center;
+    }
+    .about .right{
+    border-left:none;
+    margin:auto;
+    padding-left:0;
+    }
+}
+@media screen and (max-width:750px){
+    /*调整可能引起排版问题的h2字体大小*/
+    .words h2{font-size:40px;}
+    /*调整下方的特点栏以便显示正确*/
+    .feature .left{
+    border:none;
+    padding-right:0;
+    }
+}

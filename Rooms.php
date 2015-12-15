@@ -19,41 +19,45 @@
 	//这里写的是用于调用pic函数的内容
 	//下面应该写关于主题中初始化的名称内容。
 	$Name="Living-Room";
-	$Contents='<h2>Living-Room</h2><p style="color:#ff6700">Learn More>>>></p>';//这里可以写HTML的格式的内容
+	$Contents='<h2>Living-Room</h2><br /><p>Around 50m² big movement environment.</p><br /><p style="color:#ff6700">Learn More>>>></p>';//这里可以写HTML的格式的内容
 	$TextColor="#000";//#3b362d";//这里是写文本的颜色（图片平均色暗100）
-	$Contents=DivLink("American.php", $Contents,$TextColor);//这里将这个内容添加链接
-	$BackgroundColor="#978a74";//这里是写背景色（图片平均色亮50）
-	//第一个空是写网站中的图片的路径，第二个空格是写由图片而要生成的背景颜色
-	//第三个空是可能需要定义的自定义样式，第四个空是文本框显示的位置
-	//（上T右R下B左L）
-	pic("img/Living Room1.jpg",$TextColor, $BackgroundColor, $Contents,$Name,"","B");
+	$Contents=DivLink($SiteServer."American.php", $Contents,$TextColor);//这里将这个内容添加链接
+	$BackgroundColor="#a39991";
+	pic("img/Living-Room1.jpg",$TextColor, $BackgroundColor, $Contents,$Name,"","B");
+	
+	
+	
 	$Name="Bedroom";
-	$Contents='<h2>Living-Room</h2><p style="color:#ff6700">Learn More>>>></p>';//这里可以写HTML的格式的内容
+	$Contents='<h2>Living-Room</h2><br /><p>Around 20m² comfortable and warm place.</p><br /><p style="color:#ff6700">Learn More>>>></p>';//这里可以写HTML的格式的内容
 	$TextColor="#000";//#3b362d";//这里是写文本的颜色（图片平均色暗100）
-	$Contents=DivLink("American.php", $Contents,$TextColor);//这里将这个内容添加链接
-	$BackgroundColor="#978a74";//这里是写背景色（图片平均色亮50）
+	$Contents=DivLink($SiteServer."American.php", $Contents,$TextColor);//这里将这个内容添加链接
+	$BackgroundColor="#a19494";//这里是写背景色（图片平均色亮50）
 	//第一个空是写网站中的图片的路径，第二个空格是写由图片而要生成的背景颜色
 	//第三个空是可能需要定义的自定义样式，第四个空是文本框显示的位置
 	//（上T右R下B左L）
-	pic("img/Living Room1.jpg",$TextColor, $BackgroundColor, $Contents,$Name,"","B");
+	pic("img/Bedroom1.jpg",$TextColor, $BackgroundColor, $Contents,$Name,"","B");
+
 	$Name="Bathroom";
-	$Contents='<h2>Living-Room</h2><p style="color:#ff6700">Learn More>>>></p>';//这里可以写HTML的格式的内容
+	$Contents='<h2>Bathroom</h2><br /><p>Around 20mm² fancy place.</p><br /><p style="color:#ff6700">Learn More>>>></p>';//这里可以写HTML的格式的内容
 	$TextColor="#000";//#3b362d";//这里是写文本的颜色（图片平均色暗100）
-	$Contents=DivLink("American.php", $Contents,$TextColor);//这里将这个内容添加链接
-	$BackgroundColor="#978a74";//这里是写背景色（图片平均色亮50）
+	$Contents=DivLink($SiteServer."American.php", $Contents,$TextColor);//这里将这个内容添加链接
+	$BackgroundColor="#bdb8b2";//这里是写背景色（图片平均色亮50）
 	//第一个空是写网站中的图片的路径，第二个空格是写由图片而要生成的背景颜色
 	//第三个空是可能需要定义的自定义样式，第四个空是文本框显示的位置
-	//（上T右R下B左L）
-	pic("img/Living Room1.jpg",$TextColor, $BackgroundColor, $Contents,$Name,"","B");
+	//（上T右R下B左L）	
+	pic("img/Bathroom1.jpg",$TextColor, $BackgroundColor, $Contents,$Name,"","B");
+	
+	
+	
 	$Name="Kitchen";
-	$Contents='<h2>Living-Room</h2><p style="color:#ff6700">Learn More>>>></p>';//这里可以写HTML的格式的内容
+	$Contents='<h2>Kitchen</h2><br /><p>Around 20m² efficiency place.</p><br /><p style="color:#ff6700">Learn More>>>></p>';//这里可以写HTML的格式的内容
 	$TextColor="#000";//#3b362d";//这里是写文本的颜色（图片平均色暗100）
-	$Contents=DivLink("American.php", $Contents,$TextColor);//这里将这个内容添加链接
+	$Contents=DivLink($SiteServer."American.php", $Contents,$TextColor);//这里将这个内容添加链接
 	$BackgroundColor="#978a74";//这里是写背景色（图片平均色亮50）
 	//第一个空是写网站中的图片的路径，第二个空格是写由图片而要生成的背景颜色
 	//第三个空是可能需要定义的自定义样式，第四个空是文本框显示的位置
 	//（上T右R下B左L）
-	pic("img/Living Room1.jpg",$TextColor, $BackgroundColor, $Contents,$Name,"","B");
+	pic("img/Kitchen1.jpg",$TextColor, $BackgroundColor, $Contents,$Name,"","B");
 
 ?>
 

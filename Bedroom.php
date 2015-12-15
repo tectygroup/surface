@@ -19,7 +19,10 @@
 	//这里写的是用于调用pic函数的内容
 	//下面应该写关于主题中初始化的名称内容。
 	$Name="American";
-	$Contents="<p>30m²</p><p>Wooden floor</p><p>White</p><p>Simple decoration</p><p>Nice view</p>";//这里可以写HTML的格式的内容
+	$Contents="<ul><li>30m²</li>
+	           <li>Wooden floor</li>
+			   <li>White</p><p>Simple decoration</li>
+			   <li>Nice view</li></ul>";//这里可以写HTML的格式的内容
 	$TextColor="#fff";//#3b362d";//这里是写文本的颜色（图片平均色暗100）
 	$BackgroundColor="#a19494";//这里是写背景色（图片平均色亮50）
 	//第一个空是写网站中的图片的路径，第二个空格是写由图片而要生成的背景颜色
@@ -28,7 +31,11 @@
 	pic("img/Bedroom1.jpg",$TextColor, $BackgroundColor, $Contents,$Name,"","B");
 	
 	$Name="Chinese";
-	$Contents="<p>40m²</p><p>Wooden floor</p><p>Black</p><p>2m bed</p><p>Chinese traditional decoration</p>";//这里可以写HTML的格式的内容
+	$Contents="<ul><li>40m²</li>
+	               <li>Wooden floor</li>
+				   <li>Black</li>
+				   <li>2m bed</li>
+				   <li>Chinese traditional decoration</li></ul>";//这里可以写HTML的格式的内容
 	$TextColor="#000";//#3b362d";//这里是写文本的颜色（图片平均色暗100）
 	$BackgroundColor="#635d51";//这里是写背景色（图片平均色亮50）
 	//第一个空是写网站中的图片的路径，第二个空格是写由图片而要生成的背景颜色
@@ -39,7 +46,11 @@
 	
 	
 	$Name="Japanese";
-	$Contents="<p>30m²</p><p>Wooden floor</p><p>Blanket</p><p>White and brwon</p><p>Simple furniture</P>";//这里可以写HTML的格式的内容
+	$Contents="<ul><li>30m²</li>
+	               <li>Wooden floor</li>
+			       <li>Blanket</li>
+			       <li>White and brwon</li>
+			       <li>Simple furniture</li></ul>";//这里可以写HTML的格式的内容
 	$TextColor="#FFF";//#3b362d";//这里是写文本的颜色（图片平均色暗100）
 	$BackgroundColor="#e2dddb";//这里是写背景色（图片平均色亮50）
 	//第一个空是写网站中的图片的路径，第二个空格是写由图片而要生成的背景颜色
@@ -48,13 +59,19 @@
 	pic("img/Bedroom3.jpg",$TextColor, $BackgroundColor, $Contents,$Name,"","B");
 	
 	$Name="Future";
-	$Contents="<p>50m²</p><p>Wooden floor</p><p>Black and white</p><p>2m long bed</p><p>LCD TV and loudspeaker box</p><p>Modern shelf</p>";//这里可以写HTML的格式的内容
+	$Contents="<ul><li>50m²</li>
+	               <li>Wooden floor</li>
+				   <li>Black and white</li>
+				   <li>2m long bed</li>
+				   <li>LCD TV and loudspeaker box</li>
+				   <li>Modern shelf</li></ul>";//这里可以写HTML的格式的内容
 	$TextColor="#FFF";//#3b362d";//这里是写文本的颜色（图片平均色暗100）
 	$BackgroundColor="#cbccce";//这里是写背景色（图片平均色亮50）
 	//第一个空是写网站中的图片的路径，第二个空格是写由图片而要生成的背景颜色
 	//第三个空是可能需要定义的自定义样式，第四个空是文本框显示的位置
 	//（上T右R下B左L）
 	pic("img/Bedroom4.jpg",$TextColor, $BackgroundColor, $Contents,$Name,"","B");
+	
 
 ?>
 

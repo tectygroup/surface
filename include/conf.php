@@ -2,7 +2,7 @@
 //用于写站点的名字
 $SiteName="MEW ";
 //用于在地址前加上绝对外网路径的标识
-$SiteServer="";
+$SiteServer="http://stuweb.uic.edu.hk/~k530003017/";
 //指向样式类型，例如1为标准blog
 //2为地图类应用
 $SiteStyle="1";
