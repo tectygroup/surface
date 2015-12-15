@@ -3,9 +3,10 @@
 function Navigator($PageStyle,$SiteServer){
 	//定义每种类型所要链接显示名称的数组
 	//后面需要定义的显示出来的名称
+	//0为主页，1为Rooms，2为Room，3为Connect
 	$Fu=array("hhhhhhh","样式二","样式三");$FuName="Future Style";
 	$Jan=array();$JanName="";
-	$US=array("Living-Room","Dining-Room","Toilet","Host-Room","Guest-Room");$USName="American Style";
+	$US=array("Designer","Supplier");$USName="Contacts";
 	$Cn=array("Living-Room","Bedroom","Toilet","Dining-Room");$CnName="Chinese Style";
 	
 	//定义一个之后会用到的空数组,空变量Detail
@@ -52,8 +53,6 @@ function Navigator($PageStyle,$SiteServer){
 	//通过判断NavigatorShow来控制是否显示Navigator的内容。
 	if($NavigatorShow=="0"){
 		echo'<div class="navigator"></div>';
-		
-		
 	}
 	else{
 		//将变量ProductCategory返回规定的格式的内容
@@ -78,8 +77,8 @@ function Navigator($PageStyle,$SiteServer){
 	//这里是如果是主页，隐藏导航栏的地方
 	end:
 }
-function MailAddress($MailAddress,$Content){
-	echo '<a href="mailto:'.$MailAddress.'">'.$Content.'</a>';	
+function MailAddress($MailAddress){
+	echo '<a href="mailto:'.$MailAddress.'">'.$MailAddress.'</a>';	
 } 
 
 

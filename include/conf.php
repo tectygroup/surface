@@ -1,6 +1,6 @@
-<?php
+﻿<?php
 //用于写站点的名字
-$SiteName="Surface Test";
+$SiteName="MEW ";
 //用于在地址前加上绝对外网路径的标识
 $SiteServer="";
 //指向样式类型，例如1为标准blog

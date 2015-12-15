@@ -23,12 +23,15 @@ $ProductCategory="";
 	<div class="header ">
 		<div class="container">
 			<a href="index.php"><img class="logo" src="plug/logo.jpg" /></a>
-		    <ul class="category">
-				<li><a href="<?php echo $SiteServer; ?>Future.php" class="text">Future</a></li>
-				<li><a href="<?php echo $SiteServer; ?>Japanese.php" class="text">Japanese</a></li>
-				<li><a href="<?php echo $SiteServer; ?>American.php" class="text">American</a></li>
-				<li><a href="<?php echo $SiteServer; ?>Chinese.php" class="text">Chinese</a></li>
+
+			<ul class="<?php echo $SiteServer; ?>category">
+				<li><a href="<?php echo $SiteServer; ?>Future.php">Future</a></li>
+				<li><a href="<?php echo $SiteServer; ?>Japanese.php" >Japanese</a></li>
+				<li><a href="<?php echo $SiteServer; ?>American.php" >American</a></li>
+				<li><a href="<?php echo $SiteServer; ?>Chinese.php" >Chinese</a></li>
+				<li><a href="<?php echo $SiteServer; ?>Rooms.php" class="right" style="">Rooms</a></li>
 			</ul>
+
 		</div>
 		<div class="clear"></div>
 	</div>

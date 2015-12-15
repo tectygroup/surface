@@ -85,19 +85,14 @@ a,li a{
 	margin:1.5em 0 1.5em 2em;
 	color:black;
 	font-size:18px;
-
 }
-.header{
-	//margin:2em 0;	
+.category .right{
+	float: right;margin-right:10px;
 }
-.text{
-	text-align:center;
-}
-
 .navigator{
     /*用于导航栏的创建的格式*/
     background-color:#f5f5f5;
-    margin-top:5.45em;
+    margin-top:5.7em;
 }
 .navigator .left h2{
 	/*用于定义在于导航栏的字体显示*/
@@ -140,7 +135,8 @@ a,li a{
 	position:absolute;
 	z-index:1;
     text-align:center;
-
+    /*用于产生白色的文本阴影来增强现实效果*/
+    text-shadow:0.5px 0.5px 0.5px #FFF; 
 }
 .content.T,.content.B{
     width:97%;
@@ -176,8 +172,7 @@ a,li a{
 .words h2{
 	font-size:60px;
     margin:0;
-    /*用于产生白色的文本阴影来增强现实效果*/
-    text-shadow:0.5px 0.5px 0.5px #FFF;
+
     
 }
 
@@ -236,9 +231,7 @@ a,li a{
     font-weight:400;
 }
 /*下面是定义只会在contact中的样式*/
-.contacts{
-	
-	
-	
+.container .table-2 tr{
+    width:100%;
 }
 /*下面定义的是只会用在Rooms里面的样式*/
