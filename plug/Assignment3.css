@@ -231,7 +231,10 @@ a,li a{
     font-weight:400;
 }
 /*下面是定义只会在contact中的样式*/
-.container .table-2 tr{
-    width:100%;
+.container .table-2 img{
+    width:100%
+}
+.container .table-2 td{
+    text-align:center; 
 }
 /*下面定义的是只会用在Rooms里面的样式*/

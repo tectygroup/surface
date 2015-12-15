@@ -3,9 +3,10 @@
 function Navigator($PageStyle,$SiteServer){
 	//定义每种类型所要链接显示名称的数组
 	//后面需要定义的显示出来的名称
-	//0为主页，1为Rooms，2为Room，3为Connect
-	$Fu=array("hhhhhhh","样式二","样式三");$FuName="Future Style";
-	$Jan=array();$JanName="";
+	//0为主页，1为Rooms，2为Room，3为Contacts
+	//2-1,2-2,2-3,2-4分别为Living-Room,Bedroom,Bathroom,Kitchen
+	$Rooms=array("hhhhhhh","样式二","样式三");$RoomsName="Future Style";//Rooms的总页面
+	$Room=array("American","Chinese","Japanese","Future");//Room页面,每个房间的名字在后面定义
 	$US=array("Designer","Supplier");$USName="Contacts";
 	$Cn=array("Living-Room","Bedroom","Toilet","Dining-Room");$CnName="Chinese Style";
 	
@@ -20,12 +21,24 @@ function Navigator($PageStyle,$SiteServer){
 			break;
 		//每一种风格的样式配置赋值为后面循环语句用到的数组
 		case 1:
-			$array=$Fu;
-			$StyleName=$FuName;
+			$array=$Rooms;
+			$StyleName=$RoomsName;
 			break;		
-		case 2:
-			$array=$Jan;
-			$StyleName=$JanName;
+		case 2-1:
+			$array=$Room;
+			$StyleName="Living-Room";
+			break;			
+		case 2-2:
+			$array=$Room;
+			$StyleName="Bedroom";
+			break;				
+		case 2-3:
+			$array=$Room;
+			$StyleName="Bathroom";
+			break;				
+		case 2-4:
+			$array=$Room;
+			$StyleName="Kitchen";
 			break;		
 		case 3:
 			$array=$US;

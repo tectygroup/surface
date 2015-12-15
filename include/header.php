@@ -22,22 +22,21 @@ $ProductCategory="";
 	</head>
 	<div class="header ">
 		<div class="container">
-			<a href="index.php"><img class="logo" src="plug/logo.jpg" /></a>
+			<a href="index.php"><img class="logo" src="<?php echo $SiteServer; ?>plug/logo.jpg" /></a>
 
 			<ul class="<?php echo $SiteServer; ?>category">
-				<li><a href="<?php echo $SiteServer; ?>Future.php">Future</a></li>
-				<li><a href="<?php echo $SiteServer; ?>Japanese.php" >Japanese</a></li>
-				<li><a href="<?php echo $SiteServer; ?>American.php" >American</a></li>
-				<li><a href="<?php echo $SiteServer; ?>Chinese.php" >Chinese</a></li>
+				<li><a href="<?php echo $SiteServer; ?>Living-Room.php">Living-Room</a></li>
+				<li><a href="<?php echo $SiteServer; ?>Bedroom.php" >Bedroom</a></li>
+				<li><a href="<?php echo $SiteServer; ?>Bathroom.php" >Bathroom</a></li>
+				<li><a href="<?php echo $SiteServer; ?>Kitchen.php" >Kitchen</a></li>
 				<li><a href="<?php echo $SiteServer; ?>Rooms.php" class="right" style="">Rooms</a></li>
 			</ul>
 
 		</div>
 		<div class="clear"></div>
 	</div>
-		<?php
-		//控制导航栏的显示及其内容
-		//第一格填该页的风格，第二格为网站后台的参数，用于支持外站的访问。
-		Navigator($PageStyle,$SiteServer);
-		?>
-	</div>
+	<?php
+	//控制导航栏的显示及其内容
+	//第一格填该页的风格，第二格为网站后台的参数，用于支持外站的访问。
+	Navigator($PageStyle,$SiteServer);
+	?>
