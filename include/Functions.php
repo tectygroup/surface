@@ -4,10 +4,10 @@ function Navigator($PageStyle,$SiteServer){
 	//定义每种类型所要链接显示名称的数组
 	//后面需要定义的显示出来的名称
 	//0为主页，1为Rooms，2为Room，3为Contacts
-	//2-1,2-2,2-3,2-4分别为Living-Room,Bedroom,Bathroom,Kitchen
-	$Rooms=array("hhhhhhh","样式二","样式三");$RoomsName="Future Style";//Rooms的总页面
+	//21,22,23,24分别为Living-Room,Bedroom,Bathroom,Kitchen
+	$Rooms=array("Living-Room","Bedroom","Bathroom","Kitchen");$RoomsName="Room Overview";//Rooms的总页面
 	$Room=array("American","Chinese","Japanese","Future");//Room页面,每个房间的名字在后面定义
-	$US=array("Designer","Supplier");$USName="Contacts";
+	$Contacts=array("Designer","Supplier");$ContactsName="Contacts";
 	$Cn=array("Living-Room","Bedroom","Toilet","Dining-Room");$CnName="Chinese Style";
 	
 	//定义一个之后会用到的空数组,空变量Detail
@@ -24,25 +24,25 @@ function Navigator($PageStyle,$SiteServer){
 			$array=$Rooms;
 			$StyleName=$RoomsName;
 			break;		
-		case 2-1:
+		case 21:
 			$array=$Room;
 			$StyleName="Living-Room";
 			break;			
-		case 2-2:
+		case 22:
 			$array=$Room;
 			$StyleName="Bedroom";
 			break;				
-		case 2-3:
+		case 23:
 			$array=$Room;
 			$StyleName="Bathroom";
 			break;				
-		case 2-4:
+		case 24:
 			$array=$Room;
 			$StyleName="Kitchen";
 			break;		
 		case 3:
-			$array=$US;
-			$StyleName=$USName;
+			$array=$Contacts;
+			$StyleName=$ContactsName;
 			break;
 		case 4:
 			$array=$Cn;
@@ -82,7 +82,8 @@ function Navigator($PageStyle,$SiteServer){
 							echo $Details.'
 						</ul>
 					</div>
-				<div class="clear"></div>
+					<div class="clear"></div>
+				</div>
 			</div>';
 		//按照规定格式输出抬头上面的变量
 	}
@@ -102,13 +103,16 @@ function pic($PictureLink,$TextColor,$BackgroundColor,$Content,$Name,$Style,$Ali
 	//这个将图片排版好
 
 	echo '
-		<div id="'.$Name.'" style="background-color:'.$BackgroundColor.';'.$Style.'" class="img"><div class="container">
-			<div class="background"><img src="'.$PictureLink.'" />
-			<div class="content '.$Align.' opacity" style="background-color:'.$BackgroundColor.'">
+		<div style="background-color:'.$BackgroundColor.';'.$Style.'" class="img">
+			<div class="AnchorLink" id="'.$Name.'" ></div>
+			<div class="container">
+				<div class="background"><img src="'.$PictureLink.'" />
+				<div class="content '.$Align.' opacity" style="background-color:'.$BackgroundColor.'">
+				</div>
+				<div class="content '.$Align.'"><div class="words" style="color:'.$TextColor.'">'.$Content.'</div></div>
+				</div>
+				<div class="clear">
 			</div>
-			<div class="content '.$Align.'"><div class="words" style="color:'.$TextColor.'">'.$Content.'</div></div>
-			</div>
-			<div class="clear"></div>
 		</div></div>';
 }
 //这个函数是用于插入一个全屏的div，带有指定的链接

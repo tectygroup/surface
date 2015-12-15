@@ -24,7 +24,7 @@
 	//第一个空是写网站中的图片的路径，第二个空格是写由图片而要生成的背景颜色
 	//第三个空是可能需要定义的自定义样式，第四个空是文本框显示的位置
 	//（上T右R下B左L）
-	pic("img/CompanyBuilding.jpg",$TextColor, $BackgroundColor, $Contents,$Name,"","L");
+	pic("img/CompanyBuilding.jpg",$TextColor, $BackgroundColor, $Contents,$Name,"","T");
 	
 ?>
 

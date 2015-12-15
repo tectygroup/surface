@@ -20,7 +20,7 @@ $ProductCategory="";
 		}
 		?>
 	</head>
-	<div class="header ">
+	<div class="Header ">
 		<div class="container">
 			<a href="index.php"><img class="logo" src="<?php echo $SiteServer; ?>plug/logo.jpg" /></a>
 
@@ -35,6 +35,7 @@ $ProductCategory="";
 		</div>
 		<div class="clear"></div>
 	</div>
+	<div class="HeaderHeight"><!-- 用于填充空间的一个标签，用于正确对齐所有文本。 --></div>
 	<?php
 	//控制导航栏的显示及其内容
 	//第一格填该页的风格，第二格为网站后台的参数，用于支持外站的访问。

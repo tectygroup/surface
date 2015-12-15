@@ -9,6 +9,7 @@
 	
 	//设置页面中显示的文档的风格的变量
 	//0为主页，1为Rooms，2为Room，3为Contacts
+	//21,22,23,24分别为Living-Room,Bedroom,Bathroom,Kitchen
 	$PageStyle="1";
 	
 	

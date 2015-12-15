@@ -9,13 +9,13 @@
 	
 	//设置页面中显示的文档的风格的变量
 	//0为主页，1为Rooms，2为Room，3为Connect
-	$PageStyle="1";
+	$PageStyle="3";
 	//引用页眉的代码
 	include 'include/header.php';
 ?>
-<div class="container">
-	<table class="table-2">
-	<tr>
+<div class="container" >
+	<table class="table-2" rules="all" frame="box">
+	<tr id="Designer">
 		<td>Toby Huang</td>
 		<td>Skyler Liu</td>
 	</tr>
@@ -31,9 +31,9 @@
 		<td><img src="img/Toby.jpg" /></td>
 		<td><img src="img/Skyler.jpg" /></td>
 	</tr>
-	<tr>
-		<td><img src="img/Emma.jpg" /></td>
+	<tr id="Supplier">
 		<td><img src="img/Bill.jpg" /></td>
+		<td><img src="img/Emma.jpg" /></td>
 	</tr>
 	<tr>
 		<td><?php MailAddress("66@qq.com");?></td>
@@ -44,8 +44,8 @@
 		<td>+86-150-0000-0000</td>
 	</tr>
 	<tr>
-		<td>Emma Yuan</td>
 		<td>Bill Jiang	</td>
+		<td>Emma Yuan</td>
 	</tr>
 	</table>
 
