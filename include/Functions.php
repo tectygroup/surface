@@ -1,5 +1,35 @@
 <?php 
+function EchoHeader($HeaderItemLeft,$HeaderItemRight){
+    //定义下面会用到的变量 array Details x
+    $Details="";$x="";
+    //这边是将左边的内容格式化输出Details
+	$arrlength=count($HeaderItemLeft);
+	for($x=0;$x<$arrlength;$x++) {
+        $Details=$Details.'<li><a href="'.$HeaderItemLeft[$x][1].'.php">'.$HeaderItemLeft[$x][0].'</a></li>';
+	}
+    //这边是将右边的内容格式化输出到Details
+    $arrlength=count($HeaderItemRight);
+    for($x=0;$x<$arrlength;$x++) {
+        $Details=$Details.'<li class="right"><a href="'.$HeaderItemRight[$x][1].'.php">'.$HeaderItemRight[$x][0].'</a></li>';
+	}
+    
+    
+    //显示最终合并的内容
+    echo'<div class="Header ">
+		<div class="container">
+			<a href="index.php"><img class="logo" src="plug/logo.jpg" /></a>
 
+			<ul class="category">
+                '.$Details.'
+			</ul>
+
+		</div>
+		<div class="clear"></div>
+	</div>
+	<div class="HeaderHeight"><!-- 用于填充空间的一个标签，用于正确对齐所有文本。 --></div>';
+    
+    
+}
 function Navigator($PageStyle,$SiteServer){
 	//定义每种类型所要链接显示名称的数组
 	//后面需要定义的显示出来的名称
@@ -60,9 +90,7 @@ function Navigator($PageStyle,$SiteServer){
 			$Details=$Details.'<a href="#'.$array[$x].'"><li>'.$array[$x].'</li></a>';
 		}
 	}
-	foreach ($array as $array) {
 
-	}
 	//通过判断NavigatorShow来控制是否显示Navigator的内容。
 	if($NavigatorShow=="0"){
 		echo'<div class="navigator"></div>';

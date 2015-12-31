@@ -20,22 +20,18 @@ $ProductCategory="";
 		}
 		?>
 	</head>
-	<div class="Header ">
-		<div class="container">
-			<a href="index.php"><img class="logo" src="<?php echo $SiteServer; ?>plug/logo.jpg" /></a>
-
-			<ul class="category">
-				<li><a href="<?php echo $SiteServer; ?>Living-Room.php">Living-Room</a></li>
-				<li><a href="<?php echo $SiteServer; ?>Bedroom.php" >Bedroom</a></li>
-				<li><a href="<?php echo $SiteServer; ?>Bathroom.php" >Bathroom</a></li>
-				<li><a href="<?php echo $SiteServer; ?>Kitchen.php" >Kitchen</a></li>
-				<li class="right" style="display:inline;"><a href="<?php echo $SiteServer; ?>Rooms.php" >Rooms</a></li>
-			</ul>
-
-		</div>
-		<div class="clear"></div>
-	</div>
-	<div class="HeaderHeight"><!-- 用于填充空间的一个标签，用于正确对齐所有文本。 --></div>
+    <?php 
+    $HeaderItemLeft=array(
+        array ("Timetable","Timetable"),
+        array ("Instruments","Instruments")
+        );
+    $HeaderItemRight=array(
+        array ("Sign In","Sign")
+        );
+    //这两个数组创建的数据是用于Header函数引用，这两个数组是镜像的二维数组，第一个是显示在页面上的文字
+    //第二个是该文字指向的地址，该值自带“.php”的后缀
+    EchoHeader($HeaderItemLeft,$HeaderItemRight);
+    ?>
 	<?php
 	//控制导航栏的显示及其内容
 	//第一格填该页的风格，第二格为网站后台的参数，用于支持外站的访问。
